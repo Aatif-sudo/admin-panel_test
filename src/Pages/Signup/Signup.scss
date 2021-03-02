@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.signup_page_container {
+  max-width: 600px;
+  width: 100%;
+  display: inline-table;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  height: 98%;
+}
+.signup_page_container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.signup_page_container .title::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.signup_page_container form .user_details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0 12px 0;
+}
+form .user_details .input_field {
+  margin-bottom: 10px;
+  width: calc(100% / 2 - 20px);
+}
+.user_details .input_field .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user_details .input_field input,
+.user_details .input_field select {
+  height: 35px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user_details .input_field input:focus,
+.user_details .input_field input:valid {
+  border-color: #9b59b6;
+}
+//removes arrows from input type number
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.user_details .input_field select:focus,
+.user_details .input_field select:valid {
+  border-color: #9b59b6;
+}
+form .button {
+  height: 45px;
+  margin: 45px, 0;
+}
+form .button input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+form .button input:hover {
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+@media (max-width: 584px) {
+  .signup_page_container {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  form .user_details .input_field {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .signup_page_container form .user_details {
+    max-height: 350px;
+    overflow-y: scroll;
+  }
+  .user_details::-webkit-scrollbar {
+    width: 0;
+  }
+  form .button input {
+    margin-top: 40px;
+    overflow: hidden;
+  }
+}

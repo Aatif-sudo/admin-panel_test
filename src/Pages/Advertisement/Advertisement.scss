@@ -1,0 +1,43 @@
+.adevertisement_container .advertisement_input_container {
+  display: flex;
+  margin: 20px;
+}
+
+// .dropzone_container {
+//   height: 40%;
+// }
+
+// .dropzone_container button {
+//   height: 40px;
+// }
+// .advertisement_input_container input,
+// button {
+//   height: 20%;
+//   width: 20%;
+//   margin: 10px;
+//   border: 1px solid lightgrey;
+// }
+
+// .preview_container {
+//   display: flex;
+//   justify-content: center;
+// }
+
+.preview_container video {
+  width: 50%;
+  border: 10px solid lightgrey;
+  border-radius: 5px;
+}
+
+// .advertisement_container {
+//   display: flex;
+//   justify-content: center;
+// }
+
+.card_container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

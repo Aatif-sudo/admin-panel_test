@@ -1,0 +1,28 @@
+.card {
+  margin: 10px;
+  width: 23%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .file_container {
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 400px;
+}
+
+.file_container img,
+video {
+  width: 95%;
+  height: 400px;
+  object-fit: contain;
+  border: 2px solid lightgray;
+}
+
+// h3 .date {
+//   margin: 10px;
+//   background-color: blue;
+// }

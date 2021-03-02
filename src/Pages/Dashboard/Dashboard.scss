@@ -1,0 +1,13 @@
+.main_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #c7dce4;
+}
+
+@media only screen and (max-width: 768px) {
+  .main_container {
+    min-width: 100vw;
+  }
+}
